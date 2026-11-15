@@ -16,6 +16,22 @@ Dibuat sebagai panduan informatif bagi wisatawan yang ingin menjelajahi keanekar
 - **Performa** — `loading="lazy"`, dimensi gambar eksplisit (anti layout shift), CSS/JS ter-cache terpisah
 - **Tanpa dependency** — HTML/CSS/JS murni, tanpa build step, tanpa framework
 
+## 🎨 Design System
+
+| Token | Nilai | Dipakai untuk |
+|---|---|---|
+| `--brand` | `#a78bfa` | Judul section, aksen (6.56:1 di bg-dark) |
+| `--brand-soft` | `#c4b5fd` | Judul kartu (7.19:1 di bg-card) |
+| `--brand-deep` | `#7c3aed` | Tombol solid, badge |
+| `--accent` | `#22d3ee` | Eyebrow, underline aktif, chip (10.59:1) |
+| `--bg-deep` | `#080f1e` | Background terdalam |
+| `--bg-dark` | `#0f172a` | Background utama |
+| `--bg-card` | `#223047` | Kartu |
+
+**Aksesibilitas warna** — semua pasangan foreground/background diuji dengan rasio kontras
+WCAG 2.1 dan memenuhi minimal **4.5:1 (AA)**. Aksen brand sengaja diperdalam
+dari `#7e22ce` (yang hanya 2.09:1) menjadi `#a78bfa`.
+
 ## 📁 Struktur Project
 
 ```
@@ -27,15 +43,27 @@ Peson_wakatobi/
 ├── binongko.html       # Detail Pulau Binongko
 ├── kontak.html         # Halaman kontak
 ├── css/
-│   └── style.css       # Satu sumber stylesheet (navbar, footer, komponen, responsive)
+│   └── style.css       # Design system + semua komponen (satu sumber)
 ├── js/
-│   └── main.js         # Hamburger, scroll-reveal, active nav, auto-update tahun
+│   └── main.js         # Hamburger, scroll-nav, scroll-reveal, nomor kartu, active nav
 ├── img/
-│   ├── *.jpg           # Foto destinasi (self-hosted)
-│   └── favicon-*.png   # Favicon
+│   ├── *.jpg           # 18 foto destinasi (self-hosted, sudah dioptimasi)
+│   └── favicon-*.png   # Logo mark 32/64/180
 ├── build_pages.py      # Generator halaman (opsional, untuk regenerasi konsisten)
 └── README.md
 ```
+
+### Catatan gambar
+
+Seluruh foto di `img/` berasal dari dua sumber:
+
+1. **Foto asli** yang diunduh dari sumber publik, lalu dioptimasi (resize + JPEG
+   progressive quality 78) dan disimpan lokal.
+2. **Ilustrasi yang dibuat khusus** untuk lokasi yang foto publiknya tidak tersedia
+   atau tidak cocok dengan deskripsi (Dermaga Sombu, Puncak Toliamba, Benteng Liya
+   Togo, Mercusuar Sangia, dan lainnya).
+
+Untuk penggunaan komersial, ganti ilustrasi dengan foto dokumentasi asli.
 
 ## 🚀 Menjalankan
 
