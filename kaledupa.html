@@ -6,7 +6,7 @@
   <title>Kaledupa &mdash; Pulau Budaya Wakatobi | Pesona Wakatobi</title>
   <meta name="description" content="Panduan wisata Pulau Kaledupa di Wakatobi: Pulau Hoga dengan dive site kelas dunia, Benteng Ollo, warisan Kesultanan Buton, dan budaya Suku Bajo." />
   <meta name="author" content="Pesona Wakatobi" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#080f1e" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="id_ID" />
@@ -26,7 +26,10 @@
   <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
   <nav class="navbar" aria-label="Navigasi utama">
-    <a href="index.html" class="navbar-brand">Pesona Wakatobi</a>
+    <a href="index.html" class="navbar-brand">
+      <span class="logo"><img src="img/favicon-32.png" alt="" width="32" height="32" /></span>
+      <span class="brand-text">Pesona Wakatobi<small>Four Islands</small></span>
+    </a>
     <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
       <span></span>
       <span></span>
@@ -43,11 +46,15 @@
   </nav>
   <main id="main">
     <section class="hero hero--short" style="background-image: url('img/pulau-hoga.jpg');">
-      <h1>Pulau Kaledupa</h1>
-      <p>Pulau Budaya &amp; Warisan Leluhur</p>
+      <div class="hero__content">
+        <span class="eyebrow">Pulau 02 &mdash; Ade</span>
+        <h1>Pulau <span class="accent">Kaledupa</span></h1>
+        <p>Pulau budaya: warisan Kesultanan Buton, tenun ikat Suku Bajo, dan bersebelahan dengan Pulau Hoga.</p>
+      </div>
+      <span class="scroll-hint" aria-hidden="true">Gulir</span>
     </section>
 
-    <div class="content">
+    <div class="content container">
       <h2>Tentang Kaledupa</h2>
       <p>
         Kaledupa adalah sebuah pulau di Kepulauan Wakatobi, Sulawesi Tenggara, yang terkenal dengan keindahan alam bawah lautnya, seperti spot diving dan keberadaan kuda laut mini (Pygmy Seahorse). Pulau ini juga menawarkan daya tarik budaya, kuliner khas, dan pengalaman menyaksikan langsung kehidupan Suku Bajo. Kaledupa secara administratif merupakan sebuah kecamatan di Kabupaten Wakatobi yang terdiri dari beberapa pulau seperti Kaledupa, Lentea, dan Darawa.
@@ -59,7 +66,9 @@
       <h2>Destinasi Unggulan</h2>
     <div class="destinations">
       <article class="dest-card">
-        <img src="img/pulau-hoga.jpg" alt="Pulau Hoga dengan pantai pasir putih di dekat Pulau Kaledupa" width="900" height="473" loading="lazy" decoding="async" />
+        <div class="dest-card__media">
+          <img src="img/pulau-hoga.jpg" alt="Pulau Hoga dengan pantai pasir putih di dekat Pulau Kaledupa" width="900" height="600" loading="lazy" decoding="async" />
+        </div>
         <div class="desc">
           <h3>Pulau Hoga</h3>
           <p>Pulau Hoga adalah salah satu permata tersembunyi di gugusan Kepulauan Wakatobi, Sulawesi Tenggara, dan secara administratif terletak berdekatan dengan Pulau Kaledupa.</p>
@@ -70,7 +79,9 @@
         </div>
       </article>
       <article class="dest-card">
-        <img src="img/benteng-ollo.jpg" alt="Benteng batu kuno dengan masjid tua diLea Kaledupa" width="900" height="600" loading="lazy" decoding="async" />
+        <div class="dest-card__media">
+          <img src="img/benteng-ollo.jpg" alt="Benteng batu kuno dengan masjid tua di Lea Kaledupa" width="900" height="600" loading="lazy" decoding="async" />
+        </div>
         <div class="desc">
           <h3>Benteng Ollo</h3>
           <p>Benteng Ollo di Desa Ollo Selatan, Pulau Kaledupa, merupakan salah satu peninggalan bersejarah utama di Wakatobi yang erat kaitannya dengan sistem pemerintahan lokal Barata Kaedupa di bawah naungan Kesultanan Buton. Benteng ini didirikan sebagai respons terhadap ancaman nyata dari bajak laut Tobelo (Sanggila) yang sering menyerang dan merampok wilayah Kaledupa.</p>
@@ -83,7 +94,11 @@
   </main>
 
   <footer>
-    <p>&copy; <span data-year>2026</span> Pesona Wakatobi &mdash; Website Pariwisata</p>
+    <div class="footer-brand">
+      <span class="logo"><img src="img/favicon-32.png" alt="" width="32" height="32" /></span>
+      Pesona Wakatobi
+    </div>
+    <p>&copy; <span data-year>2026</span> Website Pariwisata &middot; Taman Nasional Wakatobi, Sulawesi Tenggara</p>
   </footer>
 
   <script src="js/main.js" defer></script>

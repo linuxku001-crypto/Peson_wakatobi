@@ -6,9 +6,8 @@
   <title>Pesona Wakatobi — Destinasi Wisata Four Islands, Sulawesi Tenggara</title>
   <meta name="description" content="Panduan lengkap wisata Wakatobi: jelajahi Pulau Wangi-Wangi, Kaledupa, Tomia, dan Binongko. Temukan snorkeling, dive site kelas dunia, benteng bersejarah, dan budaya unik Sulawesi Tenggara." />
   <meta name="author" content="Pesona Wakatobi" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#080f1e" />
 
-  <!-- Open Graph / media sosial -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="id_ID" />
   <meta property="og:site_name" content="Pesona Wakatobi" />
@@ -28,14 +27,17 @@
 
   <!-- Navbar -->
   <nav class="navbar" aria-label="Navigasi utama">
-    <a href="index.html" class="navbar-brand">Pesona Wakatobi</a>
+    <a href="index.html" class="navbar-brand">
+      <span class="logo"><img src="img/favicon-32.png" alt="" width="32" height="32" /></span>
+      <span class="brand-text">Pesona Wakatobi<small>Four Islands</small></span>
+    </a>
     <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
       <span></span>
       <span></span>
       <span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="index.html">Beranda</a>
+      <a href="index.html" aria-current="page">Beranda</a>
       <a href="wangi-wangi.html">Wangi-Wangi</a>
       <a href="kaledupa.html">Kaledupa</a>
       <a href="tomia.html">Tomia</a>
@@ -45,69 +47,183 @@
   </nav>
 
   <main id="main">
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero" style="background-image: url('img/hero-wakatobi.jpg');">
-      <h1>Selamat Datang di Wakatobi</h1>
-      <p>Surga bawah laut Indonesia yang memukau dengan keanekaragaman hayati terbaik di dunia.</p>
+      <div class="hero__content">
+        <span class="eyebrow">Taman Nasional Wakatobi</span>
+        <h1>Empat Pulau, <span class="accent">Satu Surga</span></h1>
+        <p>
+          Jelajahi Wangi-Wangi, Kaledupa, Tomia, dan Binongko — gugusan pulau
+          dengan keanekaragaman hayati laut tertinggi di dunia.
+        </p>
+        <div class="hero__actions">
+          <a href="#islands" class="btn">Jelajahi Pulau
+            <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="kontak.html" class="btn btn--ghost">Hubungi Kami</a>
+        </div>
+      </div>
+      <span class="scroll-hint" aria-hidden="true">Gulir</span>
     </section>
 
-    <!-- Intro Section -->
-    <section class="intro">
-      <h2>Tentang Wakatobi</h2>
-      <p>
-        Wakatobi adalah kepanjangan dari empat pulau utama: <strong>Wangi-Wangi</strong>, <strong>Kaledupa</strong>,
-        <strong>Tomia</strong>, dan <strong>Binongko</strong>. Terletak di Provinsi Sulawesi Tenggara,
-        Wakatobi merupakan bagian dari Taman Nasional Laut terbesar di Indonesia dan salah satu destinasi
-        diving terbaik di dunia. Setiap pulau memiliki keunikan alam, budaya, dan destinasi wisata yang memikat.
-      </p>
+    <!-- Intro -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head section-head--narrow">
+          <h2>Tentang Wakatobi</h2>
+          <p>
+            Wakatobi adalah kepanjangan dari empat pulau utama: <strong>Wangi-Wangi</strong>,
+            <strong>Kaledupa</strong>, <strong>Tomia</strong>, dan <strong>Binongko</strong>.
+            Terletak di Provinsi Sulawesi Tenggara, Wakatobi merupakan bagian dari Taman Nasional
+            Laut terbesar di Indonesia dan salah satu destinasi diving terbaik di dunia.
+          </p>
+        </div>
+
+        <!-- Islands -->
+        <div class="islands" id="islands">
+          <!-- Wangi-Wangi -->
+          <article class="island-card">
+            <div class="island-card__media">
+              <span class="island-card__badge">Pintu Gerbang</span>
+              <img src="img/wangi-hero.jpg" alt="Dermaga dan pantai Pulau Wangi-Wangi di Wakatobi" class="island-img" width="1200" height="800" loading="lazy" decoding="async" />
+              <span class="island-card__title-over">Wangi-Wangi</span>
+            </div>
+            <div class="island-content">
+              <p>Pusat administrasi kabupaten dan pintu masuk utama Wakatobi melalui Bandara Matahora.</p>
+              <ul class="tags">
+                <li>Dermaga Sombu</li>
+                <li>Marina Togo</li>
+                <li>Goa Kontamale</li>
+              </ul>
+              <a href="wangi-wangi.html" class="btn">Jelajahi
+                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Kaledupa -->
+          <article class="island-card">
+            <div class="island-card__media">
+              <span class="island-card__badge">Pulau Budaya</span>
+              <img src="img/pulau-hoga.jpg" alt="Pulau Hoga di dekat Pulau Kaledupa dengan pantai pasir putih" class="island-img" width="900" height="600" loading="lazy" decoding="async" />
+              <span class="island-card__title-over">Kaledupa</span>
+            </div>
+            <div class="island-content">
+              <p>Pusat kebudayaan Suku Bajo dengan benteng kuno Kesultanan Buton dan tenun ikat.</p>
+              <ul class="tags">
+                <li>Benteng Ollo</li>
+                <li>Pulau Hoga</li>
+                <li>Tenun Ikat</li>
+              </ul>
+              <a href="kaledupa.html" class="btn">Jelajahi
+                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tomia -->
+          <article class="island-card">
+            <div class="island-card__media">
+              <span class="island-card__badge">Surga Selam</span>
+              <img src="img/tadu-sangia.jpg" alt="Tebing karst Tadu Sangia di Pulau Tomia" class="island-img" width="900" height="600" loading="lazy" decoding="async" />
+              <span class="island-card__title-over">Tomia</span>
+            </div>
+            <div class="island-content">
+              <p>Lebih dari 20 titik dive kelas dunia dengan visibilitas air hingga 50 meter.</p>
+              <ul class="tags">
+                <li>Onemobaa</li>
+                <li>Mirror Wall</li>
+                <li>Pantai Lakota</li>
+              </ul>
+              <a href="tomia.html" class="btn">Jelajahi
+                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Binongko -->
+          <article class="island-card">
+            <div class="island-card__media">
+              <span class="island-card__badge">Pulau Terpencil</span>
+              <img src="img/ampombero.jpg" alt="Tebing Ampombero menghadap lautan biru luas" class="island-img" width="555" height="416" loading="lazy" decoding="async" />
+              <span class="island-card__title-over">Binongko</span>
+            </div>
+            <div class="island-content">
+              <p>Pulau Tukang Besi: warisan pandai besi, desa mati, dan mercusuar tua.</p>
+              <ul class="tags">
+                <li>Desa Mati</li>
+                <li>Danau Kemento</li>
+                <li>Mercusuar</li>
+              </ul>
+              <a href="binongko.html" class="btn">Jelajahi
+                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Islands Section -->
-    <section class="islands" id="islands" aria-label="Daftar pulau Wakatobi">
-      <!-- Wangi-Wangi -->
-      <article class="island-card">
-        <img src="img/wangi-hero.jpg" alt="Dermaga dan pantai Pulau Wangi-Wangi di Wakatobi" class="island-img" width="1200" height="800" loading="lazy" decoding="async" />
-        <div class="island-content">
-          <h3>Wangi-Wangi</h3>
-          <p>Pintu gerbang Wakatobi. Destinasi: Pulau Hoga, Pantai Marina, Dermaga Matahora.</p>
-          <a href="wangi-wangi.html" class="btn">Jelajahi</a>
+    <!-- Statistik -->
+    <section class="section section--deep">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mengapa Wakatobi</span>
+          <h2>Surga Bawah Laut Teramai di Indonesia</h2>
+          <p>
+            Dengan 750 spesies koral dari 850 spesies yang ada di dunia, Wakatobi
+            menjadi rumah bagi penyu, dugong, dan ratusan spesies ikan tropis.
+          </p>
         </div>
-      </article>
 
-      <!-- Kaledupa -->
-      <article class="island-card">
-        <img src="img/pulau-hoga.jpg" alt="Pulau Hoga di dekat Pulau Kaledupa dengan pantai pasir putih" class="island-img" width="900" height="473" loading="lazy" decoding="async" />
-        <div class="island-content">
-          <h3>Kaledupa</h3>
-          <p>Pulau budaya. Destinasi: Benteng Liya, Kampung Adat, Tenun Ikat Suku Bajo.</p>
-          <a href="kaledupa.html" class="btn">Jelajahi</a>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num">750</span>
+            <span class="stat__label">Spesies koral</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">29</span>
+            <span class="stat__label">Titik dive di Pulau Hoga</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">50m</span>
+            <span class="stat__label">Visibilitas air terbaik</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">13,900</span>
+            <span class="stat__label">Km&sup2; taman nasional laut</span>
+          </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- Tomia -->
-      <article class="island-card">
-        <img src="img/puncak-tomia.jpg" alt="Puncak Tomia dengan panorama kepulauan Wakatobi" class="island-img" width="640" height="480" loading="lazy" decoding="async" />
-        <div class="island-content">
-          <h3>Tomia</h3>
-          <p>Surga penyelam. Destinasi: Roma Point, Mirror Wall, Anano Reef.</p>
-          <a href="tomia.html" class="btn">Jelajahi</a>
+    <!-- CTA -->
+    <section class="section section--alt cta">
+      <div class="container cta__inner">
+        <div class="cta__text">
+          <span class="eyebrow">Mulai Perjalanan Anda</span>
+          <h2>Siap Menyelam ke Surga Wakatobi?</h2>
+          <p>
+            Tim kami siap membantu Anda merencanakan itinerary, pemesanan,
+            dan informasi dive site terbaik di keempat pulau.
+          </p>
         </div>
-      </article>
-
-      <!-- Binongko -->
-      <article class="island-card">
-        <img src="img/ampombero.jpg" alt="Tebing Ampombero di Pulau Tomia dengan laut biru luas" class="island-img" width="555" height="416" loading="lazy" decoding="async" />
-        <div class="island-content">
-          <h3>Binongko</h3>
-          <p>Pulau terpencil. Destinasi: Pantai Perawan, Desa Nusantara, Perahu Sandeq.</p>
-          <a href="binongko.html" class="btn">Jelajahi</a>
+        <div class="cta__actions">
+          <a href="kontak.html" class="btn">Hubungi Kami
+            <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="tomia.html" class="btn btn--outline">Lihat Spot Diving</a>
         </div>
-      </article>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span data-year>2026</span> Pesona Wakatobi — Website Pariwisata</p>
+    <div class="footer-brand">
+      <span class="logo"><img src="img/favicon-32.png" alt="" width="32" height="32" /></span>
+      Pesona Wakatobi
+    </div>
+    <p>&copy; <span data-year>2026</span> Website Pariwisata &middot; Taman Nasional Wakatobi, Sulawesi Tenggara</p>
   </footer>
 
   <script src="js/main.js" defer></script>
