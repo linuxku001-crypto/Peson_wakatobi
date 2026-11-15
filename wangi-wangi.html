@@ -1,127 +1,123 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="no-js">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wangi-Wangi – Pesona Wakatobi</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { color: #fff; background: #0f172a; }
-    .navbar {
-      position: fixed; top: 0; width: 100%; background: rgba(15,23,42,0.95);
-      backdrop-filter: blur(10px); padding: 15px 5%; display: flex; justify-content: space-between;
-      align-items: center; z-index: 1000; border-bottom: 1px solid rgba(126,34,206,0.3);
-    }
-    .navbar-brand { font-size: 1.5rem; font-weight: bold; color: #c084fc; text-decoration: none; }
-    .nav-links { display: flex; gap: 20px; }
-    .nav-links a { color: #e2e8f0; text-decoration: none; }
-    .nav-links a:hover { color: #c084fc; }
-    .hero {
-      height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-      url('https://asset.kompas.com/crops/kFt195HTgD_UtgA-siyKDd4A6Go=/0x0:1000x667/1200x800/data/photo/2023/06/28/649c1713cce18.jpg');
-      background-size: cover; background-position: center;
-      display: flex; align-items: center; justify-content: center; text-align: center;
-      padding: 0 20px; margin-top: 70px;
-    }
-    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-    .content { max-width: 900px; margin: 60px auto; padding: 0 20px; }
-    .content h2 { font-size: 2.2rem; color: #c084fc; margin-bottom: 20px; }
-    .content p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px; color: #cbd5e1; }
-    .destinations { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
-    .dest-card {
-      background: #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    .dest-card img {
-      width: 100%; height: 160px; object-fit: cover;
-    }
-    .dest-card .desc { padding: 15px; }
-    .dest-card .desc h3 { color: #e2e8f0; margin-bottom: 8px; }
-    .dest-card .desc p { font-size: 0.95rem; color: #94a3b8; }
-    footer { text-align: center; padding: 30px; background: #0f172a; color: #94a3b8; margin-top: 60px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wangi-Wangi &mdash; Pintu Gerbang Wakatobi | Pesona Wakatobi</title>
+  <meta name="description" content="Panduan wisata Pulau Wangi-Wangi di Wakatobi: Dermaga Sombu, Puncak Toliamba, Marina Togo Mowondu, Benteng Liya Togo, dan Goa Kontamale." />
+  <meta name="author" content="Pesona Wakatobi" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="Pesona Wakatobi" />
+  <meta property="og:title" content="Wangi-Wangi &mdash; Pintu Gerbang Wakatobi | Pesona Wakatobi" />
+  <meta property="og:description" content="Panduan wisata Pulau Wangi-Wangi di Wakatobi: Dermaga Sombu, Puncak Toliamba, Marina Togo Mowondu, Benteng Liya Togo, dan Goa Kontamale." />
+  <meta property="og:image" content="img/wangi-hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="img/favicon-180.png" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Navigasi utama">
     <a href="index.html" class="navbar-brand">Pesona Wakatobi</a>
-    <div class="nav-links">
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Beranda</a>
+      <a href="wangi-wangi.html" aria-current="page">Wangi-Wangi</a>
       <a href="kaledupa.html">Kaledupa</a>
       <a href="tomia.html">Tomia</a>
-      <a href="Binongko.htm">Binongko</a>
+      <a href="binongko.html">Binongko</a>
       <a href="kontak.html">Kontak</a>
     </div>
   </nav>
-
-  <section class="hero">
-    <div>
+  <main id="main">
+    <section class="hero hero--short" style="background-image: url('img/wangi-hero.jpg');">
       <h1>Pulau Wangi-Wangi</h1>
       <p>Pintu Gerbang Surga Wakatobi</p>
-    </div>
-  </section>
+    </section>
 
-  <div class="content">
-    <h2>Tentang Wangi-Wangi</h2>
-    <p>
-      Wangi-Wangi adalah pulau terbesar dan pusat administrasi Kabupaten Wakatobi. Pulau ini menjadi pintu masuk utama bagi wisatawan yang datang melalui Bandara Matahora. Nama "Wangi-Wangi" konon berasal dari harumnya bunga cengkeh dan pala yang tumbuh subur di pulau ini.
-    </p>
-    <p>
-      Selain sebagai pusat pemerintahan, Wangi-Wangi menawarkan keindahan alam yang memukau, mulai dari pantai berpasir putih hingga spot snorkeling yang mudah diakses.
-    </p>
+    <div class="content">
+      <h2>Tentang Wangi-Wangi</h2>
+      <p>
+        Wangi-Wangi adalah pulau terbesar dan pusat administrasi Kabupaten Wakatobi. Pulau ini menjadi pintu masuk utama bagi wisatawan yang datang melalui Bandara Matahora. Nama &quot;Wangi-Wangi&quot; konon berasal dari harumnya bunga cengkeh dan pala yang tumbuh subur di pulau ini.
+      </p>
+      <p>
+        Selain sebagai pusat pemerintahan, Wangi-Wangi menawarkan keindahan alam yang memukau, mulai dari pantai berpasir putih hingga spot snorkeling yang mudah diakses.
+      </p>
 
-    <h2>Destinasi Unggulan</h2>
+      <h2>Destinasi Unggulan</h2>
     <div class="destinations">
-       <div class="dest-card">
-        <img src="https://asset.kompas.com/crops/_OWqW7iAFSFpxMKecW7EBp4a8Ys=/0x25:1000x692/750x500/data/photo/2023/07/10/64ab88a991227.jpg" alt="Puncak toliamba">
+      <article class="dest-card">
+        <img src="img/dermaga-sombu.jpg" alt="Dermaga Sombu yang menjorok ke laut di Pulau Wangi-Wangi" width="750" height="500" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>Dermaga sombu</h3>
-          <p>Dermaga Sombu (Sombu Jetty), yang terletak di Desa Sombu, Wanci, adalah salah satu landmark wisata bahari di Pulau Wangi-Wangi. Dermaga kayu yang panjang dan estetik ini menjorok ke perairan jernih, menjadikannya lokasi yang sangat populer untuk berfoto, terutama saat momen matahari terbenam. Lebih dari sekadar jembatan biasa, Dermaga Sombu berfungsi sebagai gerbang entry langsung menuju dive site yang terkenal dan mudah diakses, bahkan untuk pemula. Berjalan di atasnya sudah menyajikan pemandangan air laut tosca yang tenang dan mengundang.</p>
-          <p>Perairan di bawah dan sekitar Dermaga Sombu dikenal sebagai bagian dari keindahan Taman Nasional Wakatobi, menawarkan kekayaan terumbu karang dan biota laut yang memukau untuk kegiatan snorkeling dan diving. Lokasi ini dikenal sebagai Sombu Dive, ditandai dengan adanya patung Ikan Napoleon di dekatnya. </p>
+          <h3>Dermaga Sombu</h3>
+          <p>Dermaga Sombu (Sombu Jetty), yang terletak di Desa Sombu, Wanci, adalah salah satu landmark wisata bahari di Pulau Wangi-Wangi. Dermaga kayu yang panjang dan estetik ini menjorok ke perairan jernih, menjadikannya lokasi yang sangat populer untuk berfoto, terutama saat momen matahari terbenam.</p>
+          <p>Lebih dari sekadar jembatan biasa, Dermaga Sombu berfungsi sebagai gerbang entry langsung menuju dive site yang terkenal dan mudah diakses, bahkan untuk pemula. Berjalan di atasnya sudah menyajikan pemandangan air laut tosca yang tenang dan mengundang.</p>
+          <p>Perairan di bawah dan sekitar Dermaga Sombu dikenal sebagai bagian dari keindahan Taman Nasional Wakatobi, menawarkan kekayaan terumbu karang dan biota laut yang memukau untuk kegiatan snorkeling dan diving. Lokasi ini dikenal sebagai Sombu Dive, ditandai dengan adanya patung Ikan Napoleon di dekatnya.</p>
         </div>
-      </div>
-      <div class="dest-card">
-        <img src="https://img.antaranews.com/cache/1200x800/2023/12/31/WhatsApp-Image-2023-12-31-at-13.38.33.jpg.webp" alt="Puncak toliamba">
+      </article>
+      <article class="dest-card">
+        <img src="img/puncak-toliamba.jpg" alt="Pemandangan laut luas dari Puncak Toliamba di Wanci" width="900" height="600" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>Puncak toliamba</h3>
-          <p>Panorama Laut dan Pulau: Dari ketinggian Toliamba, pengunjung dapat menikmati hamparan lautan biru yang luas berpadu dengan hijaunya pepohonan. Pada hari yang cerah, Anda dapat melihat pemandangan indah pulau-pulau di sekitar Kepulauan Wakatobi, bahkan konon hingga Pulau Buton..</p>
+          <h3>Puncak Toliamba</h3>
+          <p>Panorama Laut dan Pulau: Dari ketinggian Toliamba, pengunjung dapat menikmati hamparan lautan biru yang luas berpadu dengan hijaunya pepohonan. Pada hari yang cerah, Anda dapat melihat pemandangan indah pulau-pulau di sekitar Kepulauan Wakatobi, bahkan konon hingga Pulau Buton.</p>
           <p>Spot Matahari Terbenam (Sunset): Tempat ini disebut-sebut sebagai salah satu lokasi terbaik di Wanci untuk menyaksikan momen sunset yang sangat menawan, di mana cahaya keemasan memancar di atas lautan.</p>
           <p>Lanskap Asri: Area Puncak Toliamba dikelilingi oleh pepohonan yang rindang dan alam yang masih asri, menciptakan suasana yang sejuk, tenang, dan damai, menjadikannya tempat favorit untuk bersantai atau sekadar nongkrong bagi muda-mudi dan keluarga.</p>
         </div>
-      </div>
-      <div class="dest-card">
-        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/cf/a8/13/caption.jpg?w=700&h=-1&s=1" alt="Pantai Marina">
+      </article>
+      <article class="dest-card">
+        <img src="img/marina-togo.jpg" alt="Area Marina Togo Mowondu di Wanci pada malam hari" width="653" height="366" loading="lazy" decoding="async" />
         <div class="desc">
           <h3>Marina Togo Mowondu (Bypass Marina)</h3>
-          <p>Di Wanci, area yang paling terkenal dengan nama "Marina" dikenal sebagai Marina Togo Mowondu atau sering juga disebut Bypass Marina. Lokasi ini merupakan destinasi wisata tepi laut yang sangat populer, bahkan bisa disebut sebagai pusat keramaian dan tempat berkumpulnya masyarakat lokal maupun wisatawan.</p>
+          <p>Di Wanci, area yang paling terkenal dengan nama &quot;Marina&quot; dikenal sebagai Marina Togo Mowondu atau sering juga disebut Bypass Marina. Lokasi ini merupakan destinasi wisata tepi laut yang sangat populer, bahkan bisa disebut sebagai pusat keramaian dan tempat berkumpulnya masyarakat lokal maupun wisatawan.</p>
           <p>Secara ringkas, Marina Togo Mowondu bukan hanya sekadar pelabuhan kecil (marina), tetapi telah berkembang menjadi taman kota tepi laut yang menjadi jantung kehidupan sosial, kuliner, dan rekreasi di Pulau Wangi-Wangi.</p>
         </div>
-      </div>
-      <div class="dest-card">
-        <img src="https://akcdn.detik.net.id/community/media/visual/2021/11/27/desa-wisata-liya-togo-di-wakatobi-1.jpeg?w=700&q=90" alt="Benteng Liya togo">
+      </article>
+      <article class="dest-card">
+        <img src="img/benteng-liya-togo.jpg" alt="Desa Benteng Liya Togo di Pulau Wangi-Wangi" width="700" height="466" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>Benteng Liya togo</h3>
-          <p>Benteng Liya Togo adalah salah satu situs sejarah dan budaya terpenting di Pulau Wangi-Wangi (Wanci), Wakatobi, yang terletak di Desa Liya Togo. Dibangun sekitar tahun 1200-an Masehi, benteng ini merupakan peninggalan dari masa kekuasaan Kesultanan Buton, berfungsi sebagai pusat pertahanan, pemerintahan, dan syiar Islam di wilayah tersebut. Struktur benteng ini dikenal memiliki arsitektur pertahanan yang kompleks dengan tiga lapis perlindungan, didirikan di atas ketinggian yang strategis sehingga selain memiliki nilai historis, ia juga menawarkan pemandangan indah ke arah laut dan perkampungan di sekitarnya.</p>
-          <p>Di dalam area Benteng Liya Togo, terdapat dua peninggalan vital. Yang pertama adalah Masjid Mubarak, yang diperkirakan dibangun pada tahun 1546 dan diyakini sebagai salah satu masjid tertua di Sulawesi Tenggara, menjadi simbol penting penyebaran agama Islam di Wakatobi. Selain itu, terdapat pula Baruga (rumah adat) dan sejumlah Lawa (pintu gerbang atau pos jaga), yang semuanya mencerminkan kekayaan budaya dan sistem sosial masyarakat masa lalu. Benteng ini, dengan keseluruhan struktur dan isinya, bukan hanya monumen sejarah, tetapi juga cerminan identitas dan peradaban yang masih dijaga oleh masyarakat Liya Togo hingga kini.</p>
+          <h3>Benteng Liya Togo</h3>
+          <p>Benteng Liya Togo adalah salah satu situs sejarah dan budaya terpenting di Pulau Wangi-Wangi (Wanci), Wakatobi, yang terletak di Desa Liya Togo. Dibangun sekitar tahun 1200-an Masehi, benteng ini merupakan peninggalan dari masa kekuasaan Kesultanan Buton, berfungsi sebagai pusat pertahanan, pemerintahan, dan syiar Islam di wilayah tersebut.</p>
+          <p>Struktur benteng ini dikenal memiliki arsitektur pertahanan yang kompleks dengan tiga lapis perlindungan, didirikan di atas ketinggian yang strategis sehingga selain memiliki nilai historis, ia juga menawarkan pemandangan indah ke arah laut dan perkampungan di sekitarnya.</p>
+          <p>Di dalam area Benteng Liya Togo, terdapat dua peninggalan vital. Yang pertama adalah Masjid Mubarak, yang diperkirakan dibangun pada tahun 1546 dan diyakini sebagai salah satu masjid tertua di Sulawesi Tenggara, menjadi simbol penting penyebaran agama Islam di Wakatobi. Selain itu, terdapat pula Baruga (rumah adat) dan sejumlah Lawa (pintu gerbang atau pos jaga), yang semuanya mencerminkan kekayaan budaya dan sistem sosial masyarakat masa lalu.</p>
         </div>
-      </div>
-      <div class="dest-card">
-        <img src="data:image/jpeg;base64,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" alt="Dermaga Matahora">
+      </article>
+      <article class="dest-card">
+        <img src="img/goa-kontamale.jpg" alt="Goa Kontamale, pemandian alami di Desa Wanci" width="900" height="600" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>Goa kontamale</h3>
-          <p>Permandian Kontamale (atau sering disebut Goa Kontamale) adalah salah satu objek wisata yang sangat terkenal di Wanci (Pulau Wangi-Wangi), Wakatobi, Sulawesi Tenggara. Ini adalah pemandian umum alami yang menawarkan pengalaman unik</p>
+          <h3>Goa Kontamale</h3>
+          <p>Permandian Kontamale (atau sering disebut Goa Kontamale) adalah salah satu objek wisata yang sangat terkenal di Wanci (Pulau Wangi-Wangi), Wakatobi, Sulawesi Tenggara. Ini adalah pemandian umum alami yang menawarkan pengalaman unik dengan air jernih dari mata air dalam gua.</p>
           <p>Goa Kontamale juga menyimpan sebuah mitos yang dipercaya oleh warga setempat, yaitu mata air di goa ini dipercaya dapat mempermudah jodoh bagi mereka yang masih lajang atau yang mengalami kesulitan dalam hubungan percintaan (sulit menikah). Mitos ini konon berasal dari kisah sepasang kekasih di masa lalu yang akhirnya menikah setelah mandi di goa tersebut.</p>
           <p>Secara keseluruhan, Permandian Kontamale adalah tempat yang tepat bagi Anda yang mencari ketenangan dan ingin menikmati kesegaran air alami di tengah keindahan alam goa yang eksotis di Wanci.</p>
         </div>
-      </div>
+      </article>
+      <article class="dest-card">
+        <img src="img/sombu.jpg" alt="Dermaga kayu Sombu di Wanci pada sore hari" width="1400" height="1400" loading="lazy" decoding="async" />
+        <div class="desc">
+          <h3>Dermaga Sombu Sunset</h3>
+          <p>Suasana Dermaga Sombu paling dramatis terjadi pada jam-jam menuju matahari terbenam, ketika langit berubah warna menjadi gradasi jingga, ungu, dan biru tua di atas laut tosca yang tenang.</p>
+          <p>Spot ini menjadi favorit fotografer sekaligus tempat palingycin untuk menikmati angin laut sore sambil menunggu matahari sepenuhnya tenggelam di balik cakrawala.</p>
+        </div>
+      </article>
     </div>
-  </div>
+    </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Pesona Wakatobi – Website Pariwisata</p>
+    <p>&copy; <span data-year>2026</span> Pesona Wakatobi &mdash; Website Pariwisata</p>
   </footer>
 
+  <script src="js/main.js" defer></script>
 </body>
-
 </html>
-
-

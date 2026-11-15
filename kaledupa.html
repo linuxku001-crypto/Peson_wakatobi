@@ -1,102 +1,91 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="no-js">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kaledupa – Pesona Wakatobi</title>
-  <style>
-    /* Sama seperti di atas — salin dari wangi-wangi.html */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { color: #fff; background: #0f172a; }
-    .navbar {
-      position: fixed; top: 0; width: 100%; background: rgba(15,23,42,0.95);
-      backdrop-filter: blur(10px); padding: 15px 5%; display: flex; justify-content: space-between;
-      align-items: center; z-index: 1000; border-bottom: 1px solid rgba(126,34,206,0.3);
-    }
-    .navbar-brand { font-size: 1.5rem; font-weight: bold; color: #c084fc; text-decoration: none; }
-    .nav-links { display: flex; gap: 20px; }
-    .nav-links a { color: #e2e8f0; text-decoration: none; }
-    .nav-links a:hover { color: #c084fc; }
-    .hero {
-      height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-      url('https://aktual.com/wp-content/uploads/2016/09/6-3.jpg');
-      background-size: cover; background-position: center;
-      display: flex; align-items: center; justify-content: center; text-align: center;
-      padding: 0 20px; margin-top: 70px;
-    }
-    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-    .content { max-width: 900px; margin: 60px auto; padding: 0 20px; }
-    .content h2 { font-size: 2.2rem; color: #c084fc; margin-bottom: 20px; }
-    .content p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px; color: #cbd5e1; }
-    .destinations { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
-    .dest-card {
-      background: #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    .dest-card img {
-      width: 100%; height: 160px; object-fit: cover;
-    }
-    .dest-card .desc { padding: 15px; }
-    .dest-card .desc h3 { color: #e2e8f0; margin-bottom: 8px; }
-    .dest-card .desc p { font-size: 0.95rem; color: #94a3b8; }
-    footer { text-align: center; padding: 30px; background: #0f172a; color: #94a3b8; margin-top: 60px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaledupa &mdash; Pulau Budaya Wakatobi | Pesona Wakatobi</title>
+  <meta name="description" content="Panduan wisata Pulau Kaledupa di Wakatobi: Pulau Hoga dengan dive site kelas dunia, Benteng Ollo, warisan Kesultanan Buton, dan budaya Suku Bajo." />
+  <meta name="author" content="Pesona Wakatobi" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="Pesona Wakatobi" />
+  <meta property="og:title" content="Kaledupa &mdash; Pulau Budaya Wakatobi | Pesona Wakatobi" />
+  <meta property="og:description" content="Panduan wisata Pulau Kaledupa di Wakatobi: Pulau Hoga dengan dive site kelas dunia, Benteng Ollo, warisan Kesultanan Buton, dan budaya Suku Bajo." />
+  <meta property="og:image" content="img/pulau-hoga.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="img/favicon-180.png" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Navigasi utama">
     <a href="index.html" class="navbar-brand">Pesona Wakatobi</a>
-    <div class="nav-links">
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Beranda</a>
       <a href="wangi-wangi.html">Wangi-Wangi</a>
+      <a href="kaledupa.html" aria-current="page">Kaledupa</a>
       <a href="tomia.html">Tomia</a>
       <a href="binongko.html">Binongko</a>
       <a href="kontak.html">Kontak</a>
     </div>
   </nav>
-
-  <section class="hero">
-    <div>
+  <main id="main">
+    <section class="hero hero--short" style="background-image: url('img/pulau-hoga.jpg');">
       <h1>Pulau Kaledupa</h1>
-      <p>Pulau Budaya & Warisan Leluhur</p>
-    </div>
-  </section>
+      <p>Pulau Budaya &amp; Warisan Leluhur</p>
+    </section>
 
-  <div class="content">
-    <h2>Tentang Kaledupa</h2>
-    <p>
-      Kaledupa adalah sebuah pulau di Kepulauan Wakatobi, Sulawesi Tenggara, yang terkenal dengan keindahan alam bawah lautnya, seperti spot diving dan keberadaan kuda laut mini (Pygmy Seahorse). Pulau ini juga menawarkan daya tarik budaya, kuliner khas, dan pengalaman menyaksikan langsung kehidupan Suku Bajo. Kaledupa secara administratif merupakan sebuah kecamatan di Kabupaten Wakatobi yang terdiri dari beberapa pulau seperti Kaledupa, Lentea, dan Darawa. 
-    </p>
-    <p>
-      Pulau ini juga dikenal sebagai pusat kebudayaan Suku Bajo dan memiliki komunitas yang sangat menjunjung tinggi kearifan lokal.
-    </p>
+    <div class="content">
+      <h2>Tentang Kaledupa</h2>
+      <p>
+        Kaledupa adalah sebuah pulau di Kepulauan Wakatobi, Sulawesi Tenggara, yang terkenal dengan keindahan alam bawah lautnya, seperti spot diving dan keberadaan kuda laut mini (Pygmy Seahorse). Pulau ini juga menawarkan daya tarik budaya, kuliner khas, dan pengalaman menyaksikan langsung kehidupan Suku Bajo. Kaledupa secara administratif merupakan sebuah kecamatan di Kabupaten Wakatobi yang terdiri dari beberapa pulau seperti Kaledupa, Lentea, dan Darawa.
+      </p>
+      <p>
+        Pulau ini juga dikenal sebagai pusat kebudayaan Suku Bajo dan memiliki komunitas yang sangat menjunjung tinggi kearifan lokal.
+      </p>
 
-    <h2>Destinasi Unggulan</h2>
+      <h2>Destinasi Unggulan</h2>
     <div class="destinations">
-      <div class="dest-card">
-        <img src="https://travellingindonesia.com/wp-content/uploads/2025/04/1517392021-ok.jpeg" alt="pulau hoga">
+      <article class="dest-card">
+        <img src="img/pulau-hoga.jpg" alt="Pulau Hoga dengan pantai pasir putih di dekat Pulau Kaledupa" width="900" height="473" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>Pulau hoga</h3>
+          <h3>Pulau Hoga</h3>
           <p>Pulau Hoga adalah salah satu permata tersembunyi di gugusan Kepulauan Wakatobi, Sulawesi Tenggara, dan secara administratif terletak berdekatan dengan Pulau Kaledupa.</p>
-          <h5>Daya Tarik Utama :</h5>
-          <p>Surga Penyelam (Diving & Snorkeling): Hoga sangat terkenal di kalangan penyelam internasional karena dianggap sebagai salah satu lokasi terumbu karang terbaik di dunia. Di perairannya, terdapat keanekaragaman hayati laut yang luar biasa, dengan laporan yang menyebutkan ada sekitar 750 spesies koral dari total 850 spesies yang ada di dunia. Setidaknya ada 29 titik penyelaman yang tersebar di sekitarnya.</p>
+          <h5>Daya Tarik Utama</h5>
+          <p>Surga Penyelam (Diving &amp; Snorkeling): Hoga sangat terkenal di kalangan penyelam internasional karena dianggap sebagai salah satu lokasi terumbu karang terbaik di dunia. Di perairannya, terdapat keanekaragaman hayati laut yang luar biasa, dengan laporan yang menyebutkan ada sekitar 750 spesies koral dari total 850 spesies yang ada di dunia. Setidaknya ada 29 titik penyelaman yang tersebar di sekitarnya.</p>
           <p>Keheningan dan Keasrian: Pulau ini menawarkan suasana yang sangat tenang, asri, dan jauh dari keramaian, menjadikannya tempat yang sempurna untuk healing dan menikmati alam tropis yang murni.</p>
           <p>Pantai Pasir Putih: Pulau Hoga dikelilingi oleh pantai pasir putih yang bersih dan air laut yang sangat jernih dengan gradasi warna biru hingga tosca.</p>
         </div>
-      </div>
-      <div class="dest-card">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3ea5_-ydXD35N783gyuRVlN-dnovFWX8gqvJj5PU0EfFUkoVrMPuuIcSdbT8F3GJvXewMOEBjYg9cDV1xD65jDzgfiY9mtEMj91Oq12V5PU022zQEcKsV5vruJnx7JMhY_Pb75S4mUE5r/s1600/MASJID++agung+bente.jpg" alt="benteng Benteng Ollo ">
+      </article>
+      <article class="dest-card">
+        <img src="img/benteng-ollo.jpg" alt="Benteng batu kuno dengan masjid tua diLea Kaledupa" width="900" height="600" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>benteng Benteng Ollo </h3>
-          <p>Benteng Ollo di Desa Ollo Selatan, Pulau Kaledupa, merupakan salah satu peninggalan bersejarah utama di Wakatobi yang erat kaitannya dengan sistem pemerintahan lokal Barata Kaedupa di bawah naungan Kesultanan Buton. Benteng ini didirikan sebagai respons terhadap ancaman nyata dari bajak laut Tobelo (Sanggila) yang sering menyerang dan merampok wilayah Kaledupa. Dibangun dari batu gunung, pasir, dan kapur, benteng berbentuk persegi panjang ini memiliki fungsi krusial sebagai pusat pertahanan dan keamanan bagi masyarakat setempat, sekaligus menjadi tempat berlindung saat situasi genting.</p>
+          <h3>Benteng Ollo</h3>
+          <p>Benteng Ollo di Desa Ollo Selatan, Pulau Kaledupa, merupakan salah satu peninggalan bersejarah utama di Wakatobi yang erat kaitannya dengan sistem pemerintahan lokal Barata Kaedupa di bawah naungan Kesultanan Buton. Benteng ini didirikan sebagai respons terhadap ancaman nyata dari bajak laut Tobelo (Sanggila) yang sering menyerang dan merampok wilayah Kaledupa.</p>
+          <p>Dibangun dari batu gunung, pasir, dan kapur, benteng berbentuk persegi panjang ini memiliki fungsi krusial sebagai pusat pertahanan dan keamanan bagi masyarakat setempat, sekaligus menjadi tempat berlindung saat situasi genting.</p>
           <p>Selain fungsi militernya, Benteng Ollo juga berperan ganda sebagai pusat pemerintahan Barata Kaedupa dan pusat kegiatan keagamaan. Hal ini dibuktikan dengan keberadaan Masjid Agung Bente di dalam kompleks benteng. Masjid ini tidak hanya menjadi tempat ibadah tetapi juga pusat syiar dan pendidikan agama Islam di Kaledupa pada masa lampau. Dengan demikian, Benteng Ollo merupakan simbol kekuatan pertahanan, tata kelola pemerintahan, dan penyebaran peradaban Islam di Pulau Kaledupa.</p>
         </div>
-      </div>
-  </div>
+      </article>
+    </div>
+    </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Pesona Wakatobi – Website Pariwisata</p>
+    <p>&copy; <span data-year>2026</span> Pesona Wakatobi &mdash; Website Pariwisata</p>
   </footer>
 
+  <script src="js/main.js" defer></script>
 </body>
-
 </html>

@@ -1,133 +1,118 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="no-js">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tomia – Pesona Wakatobi</title>
-  <style>
-    /* Salin CSS yang sama dari file sebelumnya */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { color: #fff; background: #0f172a; }
-    .navbar {
-      position: fixed; top: 0; width: 100%; background: rgba(15,23,42,0.95);
-      backdrop-filter: blur(10px); padding: 15px 5%; display: flex; justify-content: space-between;
-      align-items: center; z-index: 1000; border-bottom: 1px solid rgba(126,34,206,0.3);
-    }
-    .navbar-brand { font-size: 1.5rem; font-weight: bold; color: #c084fc; text-decoration: none; }
-    .nav-links { display: flex; gap: 20px; }
-    .nav-links a { color: #e2e8f0; text-decoration: none; }
-    .nav-links a:hover { color: #c084fc; }
-    .hero {
-      height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
-      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3n9WYzOykNiUkAL1OsXmQ8SHEowgXK7K-wA&s" class="island-img');
-      background-size: cover; background-position: center;
-      display: flex; align-items: center; justify-content: center; text-align: center;
-      padding: 0 20px; margin-top: 70px;
-    }
-    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-    .content { max-width: 900px; margin: 60px auto; padding: 0 20px; }
-    .content h2 { font-size: 2.2rem; color: #c084fc; margin-bottom: 20px; }
-    .content p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px; color: #cbd5e1; }
-    .destinations { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
-    .dest-card {
-      background: #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    .dest-card img {
-      width: 100%; height: 160px; object-fit: cover;
-    }
-    .dest-card .desc { padding: 15px; }
-    .dest-card .desc h3 { color: #e2e8f0; margin-bottom: 8px; }
-    .dest-card .desc p { font-size: 0.95rem; color: #94a3b8; }
-    footer { text-align: center; padding: 30px; background: #0f172a; color: #94a3b8; margin-top: 60px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomia &mdash; Surga Penyelam Wakatobi | Pesona Wakatobi</title>
+  <meta name="description" content="Panduan wisata Pulau Tomia di Wakatobi: Pulau Onemobaa, Puncak Tomia, Tadu Sangia, Pantai Lakota, Gua Te'e Wali, dan Pantai Ampombero." />
+  <meta name="author" content="Pesona Wakatobi" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="Pesona Wakatobi" />
+  <meta property="og:title" content="Tomia &mdash; Surga Penyelam Wakatobi | Pesona Wakatobi" />
+  <meta property="og:description" content="Panduan wisata Pulau Tomia di Wakatobi: Pulau Onemobaa, Puncak Tomia, Tadu Sangia, Pantai Lakota, Gua Te'e Wali, dan Pantai Ampombero." />
+  <meta property="og:image" content="img/onemobaa.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="img/favicon-180.png" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Navigasi utama">
     <a href="index.html" class="navbar-brand">Pesona Wakatobi</a>
-    <div class="nav-links">
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Beranda</a>
       <a href="wangi-wangi.html">Wangi-Wangi</a>
       <a href="kaledupa.html">Kaledupa</a>
+      <a href="tomia.html" aria-current="page">Tomia</a>
       <a href="binongko.html">Binongko</a>
       <a href="kontak.html">Kontak</a>
     </div>
   </nav>
-
-  <section class="hero">
-    <div>
+  <main id="main">
+    <section class="hero hero--short" style="background-image: url('img/onemobaa.jpg');">
       <h1>Pulau Tomia</h1>
       <p>Surga Penyelam Kelas Dunia</p>
-    </div>
-  </section>
+    </section>
 
-  <div class="content">
-    <h2>Tentang Tomia</h2>
-    <p>
-      Tomia adalah surga bagi para penyelam dan pecinta laut. Pulau ini memiliki lebih dari 20 titik penyelaman kelas dunia yang diakui oleh komunitas diving internasional. Terumbu karang di sini termasuk yang paling utuh dan beragam di dunia.
-    </p>
-    <p>
-      Dengan visibilitas air hingga 50 meter dan arus yang menantang, Tomia menawarkan pengalaman menyelam yang tak terlupakan.
-    </p>
+    <div class="content">
+      <h2>Tentang Tomia</h2>
+      <p>
+        Tomia adalah surga bagi para penyelam dan pencinta laut. Pulau ini memiliki lebih dari 20 titik penyelaman kelas dunia yang diakui oleh komunitas diving internasional. Terumbu karang di sini termasuk yang paling utuh dan beragam di dunia.
+      </p>
+      <p>
+        Dengan visibilitas air hingga 50 meter dan arus yang menantang, Tomia menawarkan pengalaman menyelam yang tak terlupakan.
+      </p>
 
-    <h2>Spot Diving & Snorkeling</h2>
+      <h2>Spot Diving &amp; Snorkeling</h2>
     <div class="destinations">
-      <div class="dest-card">
-        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/4b/07/50/diving-and-snorkeling.jpg?w=1000&h=-1&s=1" alt="ONEMOBAA">
+      <article class="dest-card">
+        <img src="img/onemobaa.jpg" alt="Pulau Onemobaa (Pulau Tolandona) dengan器具 selam" width="900" height="598" loading="lazy" decoding="async" />
         <div class="desc">
           <h3>Pulau Onemobaa: Identitas dan Resort Selam Kelas Dunia</h3>
-          <p>Pulau Onemobaa, yang juga dikenal dengan nama lokal Pulau Tolandona, adalah pulau kecil yang terletak di dekat Pulau Tomia, salah satu dari empat pulau utama di Wakatobi. Pulau ini menjadi sangat terkenal di kalangan penyelam internasional karena merupakan lokasi utama dari Wakatobi Dive Resort, sebuah resor mewah yang diakui secara global sebagai destinasi selam dan snorkeling premium. Akses ke pulau ini seringkali melalui penerbangan charter pribadi langsung dari Bali yang dikelola oleh resor, menjamin kondisi perairan yang sangat terawat dan eksklusif.</p>
-          
+          <p>Pulau Onemobaa, yang juga dikenal dengan nama lokal Pulau Tolandona, adalah pulau kecil yang terletak di dekat Pulau Tomia, salah satu dari empat pulau utama di Wakatobi. Pulau ini menjadi sangat terkenal di kalangan penyelam internasional karena merupakan lokasi utama dari Wakatobi Dive Resort, sebuah resor mewah yang diakui secara global sebagai destinasi selam dan snorkeling premium. Akses ke pulau ini sering melalui penerbangan charter pribadi langsung dari Bali yang dikelola oleh resor, menjamin kondisi perairan yang sangat terawat dan eksklusif.</p>
         </div>
-      </div>
-      <div class="dest-card">
-        <img src="https://i.ytimg.com/vi/OJLPRl5srRM/sddefault.jpg" alt="Anano Reef">
+      </article>
+      <article class="dest-card">
+        <img src="img/puncak-tomia.jpg" alt="Puncak Tomia di Desa Kahianga dengan vista kepulauan" width="640" height="480" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>PUNCAK TOMIA</h3>
-          <p>Puncak tomia adalah salah satu destinasi wisata darat yang paling terkenal di Pulau Tomia, Wakatobi. Lokasinya berada di dataran tinggi Desa Kahianga, Kecamatan Tomia Timur. Berbeda dengan citra Wakatobi yang didominasi keindahan bawah laut, bukit ini memberikan pengalaman yang berbeda, yaitu menikmati keseluruhan panorama kepulauan dari ketinggian.</p>
+          <h3>Puncak Tomia</h3>
+          <p>Puncak Tomia adalah salah satu destinasi wisata darat yang paling terkenal di Pulau Tomia, Wakatobi. Lokasinya berada di dataran tinggi Desa Kahianga, Kecamatan Tomia Timur. Berbeda dengan citra Wakatobi yang didominasi keindahan bawah laut, bukit ini memberikan pengalaman yang berbeda, yaitu menikmati keseluruhan panorama kepulauan dari ketinggian.</p>
         </div>
-        </div>
-      <div class="dest-card">
-        <img src="https://scontent.fkdi3-1.fna.fbcdn.net/v/t39.30808-6/475957665_1304875790563737_1141408411538227640_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFt5Rq10LxIVot1QXC4z_tDThxTyoca311OHFPKhxrfXUPkvJOUsElGHp_I03FlKP2HL3lCHPCmcgN6d-9i10yp&_nc_ohc=0odpgBmyUrQQ7kNvwH-U4oW&_nc_oc=AdlBlefqDkJpPmDix6V1wpH6vz6dsEfcENo_vhmr44BH2NyQ6IgiswKXz0ebdrjDkytEN_T7zEboBuF3f7AuijYN&_nc_zt=23&_nc_ht=scontent.fkdi3-1.fna&_nc_gid=w5kK88O1yy01wBNKAGSJxA&oh=00_AfjZ80VvOYl8IL2_p_hEZEWFZHDmE-gHjhEkJ0TBz9X4wg&oe=691E5C2E" alt="Mirror Wall">
+      </article>
+      <article class="dest-card">
+        <img src="img/tadu-sangia.jpg" alt="Tebing karst Tadu Sangia yang menjulang di tepi laut Pulau Tomia" width="900" height="600" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>Tadu sangia</h3>
+          <h3>Tadu Sangia</h3>
           <p>Pemandangan Unik: Tadu Sangia terkenal karena memiliki formasi tebing-tebing batu karang (karst) yang menjulang di tepi laut. Kontras antara batu karang yang kokoh, vegetasi hijau, dan birunya air laut menciptakan pemandangan yang dramatis dan menarik.</p>
-          <P>Spot Panjat Tebing: Kawasan Tadu Sangia, khususnya bagian "Fatu Kolo" atau "Fatu Nomo," menjadi satu-satunya spot resmi untuk panjat tebing di Pulau Tomia. Hal ini menarik para petualang yang ingin menikmati tantangan fisik sambil disuguhi pemandangan laut Wakatobi dari ketinggian.</P>
-          <P>Aktivitas Petualangan: Selain panjat tebing, kawasan ini juga cocok untuk berkemah di area sekitar tebing dan pantai, memberikan pengalaman staycation alam yang unik.</P>
+          <p>Spot Panjat Tebing: Kawasan Tadu Sangia, khususnya bagian &quot;Fatu Kolo&quot; atau &quot;Fatu Nomo,&quot; menjadi satu-satunya spot resmi untuk panjat tebing di Pulau Tomia. Hal ini menarik para petualang yang ingin menikmati tantangan fisik sambil disuguhi pemandangan laut Wakatobi dari ketinggian.</p>
+          <p>Aktivitas Petualangan: Selain panjat tebing, kawasan ini juga cocok untuk berkemah di area sekitar tebing dan pantai, memberikan pengalaman staycation alam yang unik.</p>
         </div>
-      </div>
-          <div class="dest-card">
-        <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/152/2025/04/12/pantai-lakota-3733520554.jpg" alt="pantai lakota">
+      </article>
+      <article class="dest-card">
+        <img src="img/pantai-lakota.jpg" alt="Pantai Lakota di Pulau Tomia saat matahari terbenam" width="900" height="600" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>Pantai lakota</h3>
-          <p>Pantai Lakota adalah destinasi wisata pantai paling populer di Pulau Tomia, Wakatobi, yang terletak di sisi barat pulau, menjadikannya lokasi utama dan terbaik untuk menikmati pemandangan matahari terbenam (sunset) yang memukau. Keindahan alamnya berasal dari kombinasi pesisir pantai dengan tebing karang landai yang menyediakan sudut pandang tinggi untuk menyaksikan cakrawala laut yang luas, menciptakan suasana yang romantis dan tenang di golden hour. Selain menyuguhkan panorama alam yang spektakuler, pantai ini juga mudah dijangkau dan didukung oleh fasilitas sederhana seperti warung makan dan akomodasi di sekitarnya, menjadikannya tempat ideal bagi wisatawan yang mencari pengalaman bersantai di daratan Tomia, sebagai penyeimbang sempurna dari aktivitas selam dan snorkeling Wakatobi.</p>
+          <h3>Pantai Lakota</h3>
+          <p>Pantai Lakota adalah destinasi wisata pantai paling populer di Pulau Tomia, Wakatobi, yang terletak di sisi barat pulau, menjadikannya lokasi utama dan terbaik untuk menikmati pemandangan matahari terbenam (sunset) yang memukau. Keindahan alamnya berasal dari kombinasi pesisir pantai dengan tebing karang landai yang menyediakan sudut pandang tinggi untuk menyaksikan cakrawala laut yang luas, menciptakan suasana yang romantis dan tenang di golden hour.</p>
+          <p>Selain menyuguhkan panorama alam yang spektakuler, pantai ini juga mudah dijangkau dan didukung oleh fasilitas sederhana seperti warung makan dan akomodasi di sekitarnya, menjadikannya tempat ideal bagi wisatawan yang mencari pengalaman bersantai di daratan Tomia, sebagai penyeimbang sempurna dari aktivitas selam dan snorkeling Wakatobi.</p>
         </div>
-      </div>
-
-      <div class="dest-card">
-        <img src="https://statics.indozone.news/local/6391a909382f1.jpg" alt="te'e">
+      </article>
+      <article class="dest-card">
+        <img src="img/goa-kontamale.jpg" alt="Ruang goa dengan air jernih di tepi laut Pulau Tomia" width="900" height="600" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>te'e wali</h3>
-          <p>Gua Te'e Wali memiliki bentuk mulut yang cukup luas dengan diameter sekitar 6 meter dan cenderung berbentuk semi-vertikal. Jalan masuknya menuju dasar gua dikelilingi oleh pepohonan yang rimbun, menciptakan suasana yang sejuk dan asri di sekitar mulut gua. Suasananya yang tenang dan airnya yang bening menjadikan tempat ini sebagai lokasi yang sempurna untuk menikmati pagi hari atau bersantai, jauh dari hiruk pikuk.
-
-Secara keseluruhan, Te'e Wali merupakan bukti kekayaan geologi Pulau Tomia dan menjadi salah satu destinasi wisata darat yang memukau, menawarkan misteri alam berupa air tawar di tepi laut, yang sangat berharga bagi masyarakat kepulauan.</p>
+          <h3>Gua Te'e Wali</h3>
+          <p>Gua Te'e Wali memiliki bentuk mulut yang cukup luas dengan diameter sekitar 6 meter dan cenderung berbentuk semi-vertikal. Jalan masuknya menuju dasar gua dikelilingi oleh pepohonan yang rimbun, menciptakan suasana yang sejuk dan asri di sekitar mulut gua. Suasananya yang tenang dan airnya yang bening menjadikan tempat ini sebagai lokasi yang sempurna untuk menikmati pagi hari atau bersantai, jauh dari hiruk pikuk.</p>
+          <p>Secara keseluruhan, Te'e Wali merupakan bukti kekayaan geologi Pulau Tomia dan menjadi salah satu destinasi wisata darat yang memukau, menawarkan misteri alam berupa air tawar di tepi laut, yang sangat berharga bagi masyarakat kepulauan.</p>
         </div>
-      </div>
-       <div class="dest-card">
-        <img src="https://assets.kompasiana.com/items/album/2023/07/30/20230425-154614-64c67197633ebc62095c7793.jpg?t=o&v=555" alt="Anano Reef">
+      </article>
+      <article class="dest-card">
+        <img src="img/ampombero.jpg" alt="Tebing tinggi Ampombero menghadap Samudra Pasifik" width="555" height="416" loading="lazy" decoding="async" />
         <div class="desc">
-          <h3>pantai ampobero</h3>
-          <p>Ampombero adalah salah satu destinasi ikonik di Pulau Tomia, Wakatobi, yang terletak di wilayah Desa Kulati, Tomia Timur. Lokasi ini dikenal karena keberadaan tebing-tebing tinggi yang menghadap langsung ke lautan luas, menawarkan panorama Samudra Pasifik yang spektakuler, menjadikannya spot favorit untuk fotografi, terutama saat matahari terbit dan terbenam. Keunikan utama Ampombero terletak pada namanya yang berarti "melambaikan tangan" dalam bahasa lokal. Tebing ini dulunya adalah titik krusial di mana masyarakat lokal berkumpul untuk mengantar dan mengucapkan selamat tinggal kepada sanak keluarga yang berlayar jauh, menjadikannya simbol kesetiaan, kerinduan, dan harapan akan kepulangan yang selamat di tengah kehidupan bahari yang dinamis.</p>
-
+          <h3>Pantai Ampombero</h3>
+          <p>Ampombero adalah salah satu destinasi ikonik di Pulau Tomia, Wakatobi, yang terletak di wilayah Desa Kulati, Tomia Timur. Lokasi ini dikenal karena keberadaan tebing-tebing tinggi yang menghadap langsung ke lautan luas, menawarkan panorama Samudra Pasifik yang spektakuler, menjadikannya spot favorit untuk fotografi, terutama saat matahari terbit dan terbenam.</p>
+          <p>Keunikan utama Ampombero terletak pada namanya yang berarti &quot;melambaikan tangan&quot; dalam bahasa lokal. Tebing ini dulunya adalah titik krusial di mana masyarakat lokal berkumpul untuk mengantar dan mengucapkan selamat tinggal kepada sanak keluarga yang berlayar jauh, menjadikannya simbol kesetiaan, kerinduan, dan harapan akan kepulangan yang selamat di tengah kehidupan bahari yang dinamis.</p>
         </div>
-      </div>
+      </article>
     </div>
-  </div>
+    </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Pesona Wakatobi – Website Pariwisata</p>
+    <p>&copy; <span data-year>2026</span> Pesona Wakatobi &mdash; Website Pariwisata</p>
   </footer>
 
+  <script src="js/main.js" defer></script>
 </body>
-
 </html>
